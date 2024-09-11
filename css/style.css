@@ -370,17 +370,15 @@ input[type="submit"] {
         margin-left: -28px;
     }
     .number {
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .time-container {
+        position: relative;
+        width: 32%;
+        margin-left: -28px;
     }
     .time-container::after {
-        /* transform: translate(-50%, -50%); */
-        font-weight: 900;
-        font-size: 21px;
-        content: ':';
-        position: absolute;
-        right: 13px;
-        bottom: 42%;
-        color: #00ff99;
+        display: none;
     }
     .footer-box {
         display: flex;
@@ -388,7 +386,7 @@ input[type="submit"] {
         flex-direction: column;
     }
     .footer-copright ul li {
-        margin-right: 12px;
+        margin-right: 20px;
         position: relative;
         font-size: 11px;
         margin-left: 0;
@@ -408,8 +406,7 @@ input[type="submit"] {
         width: 1px;
         height: 11px;
         background: #00D6A8;
-        right: -16px;
-        
+        right: -12px;
     }
     .bottom-logo img{
         width: 140px;
