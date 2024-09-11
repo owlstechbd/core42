@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core42</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+    <section class="coming-hero">
+        <div class="background-video">
+            <video autoplay muted loop playsinline id="desktop-video">
+                
+                <source src="images/desktop-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <video autoplay muted loop playsinline id="mobile-video">
+               
+                <source src="images/mobile-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+       
+
+        <div class="video-content">
+            <div class="video-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="bottom-logo">
+                    <img src="images/logo-bottom.png" alt="">
+                </div>
+                <div class="video-text">
+                    <h1>Core42 at Gites VenueXY</h1>
+                    <p>Affixed pretend account ten natural. Need eat week even yet that. Incommode delighted he resolving sportsmen do in listening.</p>
+                    <div class="gobal-btn">
+                        <a href="#" id="openPopup">Get Notified</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="countdown-sec">
+           <div class="container">
+                <div class="countdown-box">
+                    <p>Unveiling AI Inovation in :</p>
+                  
+
+                    <div class="countdown">
+                        <div class="time-container">
+                          <div class="circle">
+                            <svg>
+                              <circle cx="50" cy="50" r="45"></circle>
+                              <circle cx="50" cy="50" r="45" id="days-circle"></circle>
+                            </svg>
+                            <div class="number" id="days">39</div>
+                          </div>
+                          <div class="label">Days</div>
+                        </div>
+                      
+                        <div class="time-container">
+                          <div class="circle">
+                            <svg>
+                              <circle cx="50" cy="50" r="45"></circle>
+                              <circle cx="50" cy="50" r="45" id="hours-circle"></circle>
+                            </svg>
+                            <div class="number" id="hours">18</div>
+                          </div>
+                          <div class="label">Hours</div>
+                        </div>
+                      
+                        <div class="time-container">
+                          <div class="circle">
+                            <svg>
+                              <circle cx="50" cy="50" r="45"></circle>
+                              <circle cx="50" cy="50" r="45" id="minutes-circle"></circle>
+                            </svg>
+                            <div class="number" id="minutes">14</div>
+                          </div>
+                          <div class="label leabel2">Minutes</div>
+                        </div>
+                      
+                        <div class="time-container">
+                          <div class="circle">
+                            <svg>
+                              <circle cx="50" cy="50" r="45"></circle>
+                              <circle cx="50" cy="50" r="45" id="seconds-circle"></circle>
+                            </svg>
+                            <div class="number" id="seconds">25</div>
+                          </div>
+                          <div class="label leabel2">Seconds</div>
+                        </div>
+                      </div>
+                      
+
+                        
+                    
+                </div>
+           </div>
+        </div>
+        <div class="footer">
+            <div class="footer-conteiner">
+                <div class="footer-box">
+                    <div class="footer-icon">
+                        <p>Follow Us :</p>
+                        <ul>
+                            <li><a href="#"><img src="images/icon2.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon4.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon3.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon4.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icon5.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-copright">
+                        <img src="images/logo.png" alt="">
+                        <ul>
+                            <li><a href="#">Careers</a> </li>
+                            <li><a href="">Cookie Policy</a> </li>
+                            <li><a href="">Privacy Notice</a> </li>
+                            <li><a href="">Terms of Use</a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="popupForm" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <h2>Enter your details</h2>
+            <form id="form">
+                
+                <input type="text" id="name" name="name" required placeholder="Johns Yani">
+                <input type="email" id="email" name="email" required placeholder="Email">                
+                <input type="text" id="company" name="company" required placeholder="Company Name">
+                <select id="services" name="services" required>
+                    <option value="">Select a service</option>
+                    <option value="cloud">Cloud Services</option>
+                    <option value="web">Web Development</option>
+                    <option value="seo">SEO</option>
+                </select>
+
+                <label class="trem">
+                    <input type="checkbox" id="terms" name="terms" required checked>
+                    I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.
+                </label>
+
+                <input type="submit" value="Submit"></input>
+            </form>
+        </div>
+    </div>
+   
+
+    <script src="js/main.js"></script>
+</body>
+</html>
