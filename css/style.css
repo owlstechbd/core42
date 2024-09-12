@@ -172,6 +172,7 @@ video {
     height: 150px;
     text-align: center;
     transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
   }
   
   circle {
@@ -550,6 +551,7 @@ input[type="submit"] {
     svg {
         width: 75px;
         height: 75px;
+        viewBox: "0 0 75 75"; /* Add this line */
     }
     circle {
         r: 28;
@@ -575,21 +577,12 @@ input[type="submit"] {
 
 
 @media only screen and (max-width: 375px){
-    .time-container {
-         width: 32%;
-    }
-    .time-container::after{
-        display: none;
-    }
-    .number {
-        font-size: 30px;
-    }
-    .footer-copright img{
-        width: 120px;
-    }
+    
+   
     .footer-copright ul li::after {
         right: -7px;
     }
+
 }
 @media only screen and (max-width: 320px){
     .background-video {
