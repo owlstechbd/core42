@@ -19,7 +19,7 @@ a:hover{
 }
 .coming-hero{
     width: 100%;
-    background: #1B1B19;
+    background: #1b1b19;
     
     
 }
@@ -475,17 +475,7 @@ input[type="submit"] {
     }
 
     circle {
-        r: 42;
-        cx: 44;
-        cy: 45;
-    }
-    .circle{
-        width: 90px;
-        height: 90px;
-    }
-    svg {
-        width: 90px;
-        height: 90px;
+        display: none;
     }
     
     .label {
