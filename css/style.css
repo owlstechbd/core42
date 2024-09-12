@@ -7,9 +7,6 @@
 
 }
 
-body{
-    background: #1b1b19;
-}
   
 ul li{
 	list-style: none;
@@ -30,7 +27,7 @@ a:hover{
 .background-video {
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 72vh;
     overflow: hidden;
     z-index: 9;
     
@@ -80,7 +77,7 @@ video {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    height: 100vh;
+    height: 70vh;
 }
 .logo{
     padding: 40px 0;
@@ -124,13 +121,10 @@ video {
     margin-top: 40px;
 }
 .countdown-sec{
-    position: absolute;
-    bottom: 0;
-     width: 100%;
-    left: 0;
     padding: 20px 0;
    
-    
+    background:#1b1b19;
+    border-bottom: 1px #00D6A8 solid;
 
     
 }
@@ -428,21 +422,6 @@ input[type="submit"] {
         width: 100%;
         height: auto;
     }
-    .background-video {
-        width: 100%;
-        position: relative;
-        height: 95vh;
-        overflow: hidden;
-        z-index: 9;
-    }
-    .video-container{
-        height: 95vh;
-    }
-    .bottom-logo {
-        position: absolute;
-        bottom: 200px;
-        right: 00px;
-    }
 }
 
 @media only screen and (max-width: 600px){
@@ -612,9 +591,6 @@ input[type="submit"] {
     .footer-copright ul li::after {
         right: -7px;
     }
-    .bottom-logo{
-        bottom: 250px;
-    }
 
 }
 @media only screen and (max-width: 320px){
@@ -634,6 +610,6 @@ input[type="submit"] {
         height: 100vh;
     }
     .bottom-logo{
-        bottom: 350px;
+        bottom: 0;
     }
 }
