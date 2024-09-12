@@ -413,6 +413,7 @@ input[type="submit"] {
     }
     .counter-child {
         text-align: center;
+        align-items: center;
         flex-direction: column;
     }
     .counter-child p{
@@ -536,6 +537,28 @@ input[type="submit"] {
        transform: translate(-50%);
         text-align: center;
         
+    }
+    .circle {
+        width: 75px;
+        height: 75px;
+    }
+    svg {
+        width: 75px;
+        height: 75px;
+    }
+   
+    .label {
+        font-size: 9px;
+        margin-top: -29px;
+        margin-left: 22px;
+    }
+    .leabel2 {
+        margin-left: 17px;
+    }
+    .countdown {
+        flex-wrap: wrap;
+        
+        justify-content: center;
     }
 
 }
