@@ -30,7 +30,7 @@ a:hover{
 .background-video {
     width: 100%;
     position: relative;
-    height: 85vh;
+    height: 100vh;
     overflow: hidden;
     z-index: 9;
     
@@ -80,7 +80,7 @@ video {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    height: 85vh;
+    height: 100vh;
 }
 .logo{
     padding: 40px 0;
@@ -612,6 +612,9 @@ input[type="submit"] {
     .footer-copright ul li::after {
         right: -7px;
     }
+    .bottom-logo{
+        bottom: 250px;
+    }
 
 }
 @media only screen and (max-width: 320px){
@@ -631,6 +634,6 @@ input[type="submit"] {
         height: 100vh;
     }
     .bottom-logo{
-        bottom: 0;
+        bottom: 350px;
     }
 }
