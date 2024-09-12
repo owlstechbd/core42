@@ -19,7 +19,7 @@ a:hover{
 }
 .coming-hero{
     width: 100%;
-    background: #1b1b19;
+    
     
     
 }
@@ -30,6 +30,7 @@ a:hover{
     height: 72vh;
     overflow: hidden;
     z-index: 9;
+    
 }
 
 video {
@@ -42,6 +43,7 @@ video {
     transform: translate(-50%, -50%);
     z-index: -1;
     display: none;
+    
 }
 
 #desktop-video {
@@ -68,6 +70,7 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+    
     z-index: 10; /* Ensures content is above video */
 }
 .video-container{
@@ -119,7 +122,11 @@ video {
 }
 .countdown-sec{
     padding: 20px 0;
+   
+    background:#1b1b19;
     border-bottom: 1px #00D6A8 solid;
+    position: relative;
+    z-index: 9999;
     
 }
 .container{
@@ -220,6 +227,7 @@ video {
 }
 .footer{
     padding: 30px 0;
+    background: #1b1b19;
     color: #00D6A8;
 }
 .footer-box{
@@ -412,7 +420,6 @@ input[type="submit"] {
     }
     .coming-hero {
         width: 100%;
-        background: #1B1B19;
         height: auto;
     }
 }
@@ -538,17 +545,7 @@ input[type="submit"] {
         width: 75px;
         height: 75px;
     }
-    svg {
-        width: 75px;
-        height: 75px;
-        viewBox: "0 0 75 75"; /* Add this line */
-    }
-    circle {
-        r: 28;
-        cx: 34;
-        cy: 34;
-    }
-    
+   
     .label {
         font-size: 9px;
         margin-top: -29px;
