@@ -1,10 +1,25 @@
+@font-face{
+	font-family: 'Publica Sans';
+	src:url(../font/PublicaSans-Medium.otf);
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face{
+	font-family: 'Publica Sans';
+	src:url(../font/PublicaSans-Light.otf);
+	font-style: normal;
+	font-weight: 300!important;
+}
+
+
+
+
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: "Public Sans", sans-serif;
-
-
+    font-family: 'Publica Sans';
 }
 
   
@@ -19,17 +34,15 @@ a:hover{
 }
 .coming-hero{
     width: 100%;
-    
-    
-    
+    position: relative;
 }
 
 .background-video {
     width: 100%;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
-    z-index: 9;
+    z-index: -1;
     
 }
 
@@ -70,22 +83,24 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    
+    background: url(../images/dekstop-layer.png) center center no-repeat;
+    background-size: cover;
     z-index: 10; /* Ensures content is above video */
 }
 .video-container{
     width: 95%;
     margin: 0 auto;
     position: relative;
-    height: 80vh;
+    height: 100vh;
+   
 }
 .logo{
     padding: 40px 0;
 }
 .bottom-logo{
     position: absolute;
-    bottom: 40px;
-    right: 00px;
+    bottom: 300px;
+    right: 0px;
 }
 
 .video-text{
@@ -95,12 +110,14 @@ video {
 }
 .video-text h1{
     font-size: 55px;
-    font-weight: 600;
+    font-family: 'Publica Sans';
+    font-weight: 500;
 }
 .video-text h4{
     font-size: 18px;
-    font-weight: 600;
+    font-family: 'Publica Sans';
     margin-top: 15px;
+    font-weight: 500;
 }
 .video-text p{
     font-size: 18px;
@@ -110,7 +127,7 @@ video {
 }
 .video-text  a{
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 500;
     color:#000000;
     border-radius: 5px;
     padding: 14px 25px;
@@ -125,7 +142,11 @@ video {
    height: 20vh;
    display: flex;
    align-items: center;
-    background:#1b1b19;
+    background:#151B19;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
     border-bottom: 1px #00D6A8 solid;
 
 }
@@ -153,7 +174,7 @@ video {
     margin-left: -100px;
     margin-right: 30px;
     color: #00D6A8; 
-    font-weight: 600;
+    font-weight: 500;
 }
 .countdown {
     display: flex;
@@ -227,7 +248,7 @@ video {
 }
 .footer{
     padding: 30px 0;
-    background: #1b1b19;
+    background: #151B19;
     color: #00D6A8;
 }
 .footer-box{
@@ -423,6 +444,9 @@ input[type="submit"] {
         width: 100%;
         height: auto;
     }
+    .video-content{
+        background: url(../images/phone-layer.png);
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -592,6 +616,10 @@ input[type="submit"] {
     .footer-copright ul li::after {
         right: -7px;
     }
+    .bottom-logo {
+      
+        bottom: 200px;
+    }
 
 }
 @media only screen and (max-width: 320px){
@@ -610,7 +638,18 @@ input[type="submit"] {
     .video-container{
         height: 100vh;
     }
-    .bottom-logo{
-        bottom: 0;
+    .bottom-logo {
+      display: none;
+        bottom: 200px;
+    }
+    .countdown-sec{
+        height: auto;
+        position: relative;
+    }
+    .time-container {
+        margin: 0 1px;
+        margin-top: 5px;
+        width: 18%;
+        
     }
 }
