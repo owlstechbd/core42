@@ -442,7 +442,7 @@ input[type="submit"] {
     }
     .coming-hero {
         width: 100%;
-        height: auto;
+        height: 100vh;
     }
     .video-content{
         background: url(../images/phone-layer.png);
