@@ -83,7 +83,7 @@ video {
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../images/dekstop-layer.png) center center no-repeat;
+    background: url(../images/dekstop-layer.png) top center no-repeat;
     background-size: cover;
     z-index: 10; /* Ensures content is above video */
 }
@@ -338,6 +338,7 @@ video {
 .thank-content h2{
     margin-bottom: 15px;
 }
+
 .thank-content ul{
     display: flex;
     justify-content: center;
