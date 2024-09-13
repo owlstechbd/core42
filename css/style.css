@@ -312,7 +312,7 @@ video {
     position: relative;
 }
 .thankyou-popup{
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -354,7 +354,7 @@ video {
 .popup-content h2 {
     margin-top: 0;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
 
 
@@ -399,8 +399,9 @@ select:focus {
 .popup-content input:focus{
     outline: none;
 }
-.popup-content select{
+.popup-content select {
     color: #C5C4C4;
+    margin-bottom: 35px;
 }
 select:focus, select:valid {
     color: black; 
@@ -425,6 +426,7 @@ select:focus, select:valid {
     font-size: 15px;
 }
 .trem a{
+    color: #C5C4C4;
     text-decoration: underline;
 }
 input[type="submit"] {
