@@ -312,7 +312,7 @@ video {
     position: relative;
 }
 .thankyou-popup{
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
