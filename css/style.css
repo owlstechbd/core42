@@ -108,12 +108,10 @@ video {
 
 .bottom-logo {
     position: absolute;
-    bottom: 15%;
+    bottom: 40px;
     right: 0px;
 }
-.bottom-logo img{
-    width: 200px;
-}
+
 .video-text {
     color: #fff;
     max-width: 540px;
@@ -152,26 +150,21 @@ video {
 .gobal-btn {
     width: 100%;
     margin-top: 40px;
+    z-index: 99999;
+    position: relative;
 }
 
 .countdown-sec {
     padding: 25px 0;
+    height: 20vh;
     display: flex;
     align-items: center;
     background: #181B19;
+
     width: 100%;
-    margin-top: -40px;
-    z-index: 99;
-    position: relative;
+    z-index: 999;
     border-bottom: 1px #00D6A8 solid;
 
-}
-.countdown-sec p{
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 25px;
-    font-weight: 600;
-    color: #00D6A8;
 }
 
 .container {
@@ -255,7 +248,6 @@ circle#seconds-circle {
     position: absolute;
     top: 52%;
     left: 40%;
-    font-weight: 500;
     transform: translate(-50%, -50%);
     font-size: 50px;
     color: #00D6A8;
@@ -283,6 +275,7 @@ circle#seconds-circle {
     padding: 30px 0;
     background: #151B19;
     color: #00D6A8;
+    border-top: 1px #00D6A8 solid;
 }
 
 .footer-box {
@@ -482,6 +475,81 @@ select:valid {
     background-color: #000;
 }
 
+
+/* Base styles for the checkbox */
+.trem input[type="checkbox"] {
+    -webkit-appearance: none; /* Ensure iOS support */
+    -moz-appearance: none;
+    appearance: none;
+    width: 24px; /* Base size */
+    height: 24px; /* Base size */
+    border: 2px solid #555;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: white; /* Ensure a default background */
+    touch-action: manipulation; /* Improve touch interaction */
+}
+
+/* Style the checked state */
+.trem input[type="checkbox"]:checked {
+    background-color: #00D6A8; /* Custom background color when checked */
+    border-color: #00D6A8;
+}
+
+/* Add the checkmark when checked */
+.trem input[type="checkbox"]:checked::before {
+    content: '\2714'; /* Unicode for checkmark */
+    display: flex; /* Flexbox for centering */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px; /* Base font size */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    line-height: 24px; /* Base line-height */
+    pointer-events: none; /* Ensure the checkmark doesnâ€™t block clicks */
+}
+
+/* Optional: Focus state to make the checkbox stand out when focused */
+.trem input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #00D6A8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .trem input[type="checkbox"] {
+        width: 20px; /* Adjust size for tablets and smaller screens */
+        height: 20px; /* Adjust size for tablets and smaller screens */
+    }
+
+    .trem input[type="checkbox"]:checked::before {
+        font-size: 14px; /* Adjust font size for tablets and smaller screens */
+        line-height: 20px; /* Adjust line-height for tablets and smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .trem input[type="checkbox"] {
+        width: 18px; /* Further adjust size for mobile screens */
+        height: 18px; /* Further adjust size for mobile screens */
+    }
+
+    .trem input[type="checkbox"]:checked::before {
+        font-size: 12px; /* Adjust font size for mobile screens */
+        line-height: 18px; /* Adjust line-height for mobile screens */
+    }
+}
+
+  
+
+
+
 .popup-content .close-button {
     position: absolute;
     top: 10px;
@@ -512,7 +580,40 @@ input[type="submit"] {
     border-radius: 20px;
 }
 
-@media (min-width: 1600px) and (max-width: 3000px){
+
+
+.bottom-logo {
+    position: absolute;
+    bottom: 15%;
+    right: 0px;
+}
+.bottom-logo img{
+    width: 200px;
+}
+
+.countdown-sec {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    background: #181B19;
+    width: 100%;
+    margin-top: 0px;
+    z-index: 99;
+    position: relative;
+    padding-bottom: 50px;
+   
+}
+
+.countdown-sec p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 600;
+    color: #00D6A8;
+}
+
+@media (min-width: 1600px) and (max-width: 3000px) {
     .logo img{
         width: 250px;
     }
